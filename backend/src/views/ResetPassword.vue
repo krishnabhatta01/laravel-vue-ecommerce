@@ -1,18 +1,19 @@
 
 <template>
-    <Guestlayout title="Login your account?">
-        
-            <form class="mt-8 space-y-6" action="#" method="POST">
+
+    <GuestLayout title="Set new password!">
+        <form class="mt-8 space-y-6" action="#" method="POST">
                 <input type="hidden" name="remember" value="true" />
                 <div class="-space-y-px rounded-md shadow-sm">
-                    <div>
-                        <label for="email-address" class="sr-only">Email address</label>
-                        <input id="email-address" name="email" type="email" autocomplete="email" required=""
-                            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                            placeholder="Email address" />
-                    </div>
+                
                     <div>
                         <label for="password" class="sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required=""
+                            class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                            placeholder="Password" />
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Repeat Password</label>
                         <input id="password" name="password" type="password" autocomplete="current-password" required=""
                             class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                             placeholder="Password" />
@@ -27,7 +28,8 @@
                     </div>
 
                     <div class="text-sm">
-                        <router-link :to="{name:'RequestPassword'}" class="font-medium text-indigo-600 hover:text-indigo-500">Forgot your password?</router-link>
+                        <router-link :to="{ name: 'login' }"
+                            class="font-medium text-indigo-600 hover:text-indigo-500">Back to login?</router-link>
                     </div>
                 </div>
 
@@ -41,13 +43,14 @@
                         Sign in
                     </button>
                 </div>
-            </form>
+        </form>
     </Guestlayout>
+        
 </template>
 
 <script setup>
 import { LockClosedIcon } from '@heroicons/vue/20/solid'
-import Guestlayout from '../components/GuestLayout.vue';
+import GuestLayout from '../components/GuestLayout.vue';
 </script>
 
 <style scopped>
