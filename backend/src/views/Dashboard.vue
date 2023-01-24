@@ -139,10 +139,10 @@
 </template>
 
 <script>
-/* import Chart from 'chart.js';
+ import 'chart.js';
 
 export default {
-    name: 'DashboardHome',
+    name: 'Dashboard',
     data() {
         return {
             buyersData: {
@@ -225,5 +225,5 @@ export default {
         new Chart(document.getElementById('buyers-chart'), this.buyersData)
         new Chart(document.getElementById('reviews-chart'), this.reviewsData)
     }
-} */
+} 
 </script>

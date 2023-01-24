@@ -60,7 +60,8 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
+import store from '../store/index.js'
 
 export default {
     name: 'Navbar',

@@ -49,6 +49,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import store from '../store/index.js'
 
 export default {
     name: 'SideBar',
