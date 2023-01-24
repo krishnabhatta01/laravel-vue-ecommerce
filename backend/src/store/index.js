@@ -1,12 +1,13 @@
-import { createApp } from "vue";
 import { createStore } from "vuex";
 
 // Create a new store instance.
 const store = createStore({
-    state() {
-        return {
-            test:'1234'
-        }
+    state: {
+       user: {
+           token:'1234',
+           data:{},
+
+        },
     },
     getters:{},
     actions:{},
