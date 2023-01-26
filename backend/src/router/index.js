@@ -5,9 +5,12 @@ import ResetPassword from '../views/ResetPassword.vue';
 import Dashboard from '../views/Dashboard.vue';
 import store from '../store/index.js';
 import AppLayout from '../components/AppLayout.vue';
+import Product from '../views/Product.vue';
+import NotFound from '../views/NotFound.vue';
 
 
 const routes = [
+
     
     {
         path: "/app",
@@ -23,6 +26,11 @@ const routes = [
                 path: "dashboard",
                 name: "app.dashboard",
                 component: Dashboard,
+            },
+            {
+                path: "product",
+                name: "app.product",
+                component: Product,
             },
         ],
     },
@@ -51,7 +59,14 @@ const routes = [
             requiresGuest: true,
         },
     },
+    {
+        path: "/:pathMatch(.*)",
+        name: "notFound",
+        component: NotFound,
+        
+    },
 ];
+
 const router = createRouter({
     history: createWebHistory(),
     routes
