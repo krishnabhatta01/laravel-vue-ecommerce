@@ -19,7 +19,7 @@
                 </svg>
                 <span class="text-gray-700">Dashboard</span>
             </div>
-            
+
         </div>
 
         <div class="mb-4 px-4">
@@ -31,7 +31,7 @@
                     </path>
                 </svg>
                 <a href="/app/product">
-                <span class="text-gray-700">Add Product</span>
+                    <span class="text-gray-700">Add Product</span>
                 </a>
             </div>
             <div class="w-full flex items-center text-blue-400 h-10 pl-4 hover:bg-gray-200 rounded-lg cursor-pointer">
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        
+
 
     </div>
 </template>
